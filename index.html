@@ -408,7 +408,7 @@
           <code class="full-line-snip"
             >form.addEventListener('submit', sendFetchViaServer)</code
           >
-          This is app is now trying to fetch data from an external source.
+          In the terminal, stop your server. In Windows this is accomplished via <code class="inline-snip">ctrl + c</code>. Then restart your server with <code class="inline-snip">node server.js</code>. Refresh your browser and make sure it is still pointed at http://localhost:3000. The app is now trying to fetch data from an external source.
           <highlight>By design, this doesn't work yet.</highlight> This is so
           that you can see the status code, returned from the external API.
         </p>
@@ -441,8 +441,15 @@
             >'Ocp-Apim-Subscription-Key': 'YOUR API KEY HERE'</code
           >.
         </p>
+        <p class="tip">
+          <em
+            ><i
+              >Important! We will now add the api key to the code. If you are saving your project in a public place like github, it is important that you do not push your changes there. Your API key will become visible to anyone and everyone. Here is a good example of how to hide your key from github, using .gitignore https://gist.github.com/derzorngottes/3b57edc1f996dddcab25</i
+            ></em
+          >.
+        </p>
         <p>
-          Remove: YOUR API KEY HERE, and replace it with your api key. Note that
+           Remove: YOUR API KEY HERE, and replace it with your api key. Note that
           you need to leave the quotes ' ', and put your key inside like so
           '123fakekey1B2u3L4L5s6h7I8T'. If you don't it won't work.
         </p>
